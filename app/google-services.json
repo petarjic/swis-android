@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1017625944542",
+    "firebase_url": "https://swissapp-1a030.firebaseio.com",
+    "project_id": "swissapp-1a030",
+    "storage_bucket": "swissapp-1a030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017625944542:android:395d45a97e3f1f27",
+        "android_client_info": {
+          "package_name": "com.nisintechnologies.swiss"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017625944542-u12d53f3ue4bkjvdonoq051d9t1fs5eq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nisintechnologies.swiss",
+            "certificate_hash": "b75a04e996f4224b75d9171061a6b57b7abd76f8"
+          }
+        },
+        {
+          "client_id": "1017625944542-va07cpasfuj7j4b1telj0kdubfgfmmf9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcWPhaar5HcMzjCuuCIh1vs6S8dU1OACU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017625944542-va07cpasfuj7j4b1telj0kdubfgfmmf9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

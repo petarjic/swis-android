@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.EmailFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_send"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"/>
+
+        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:text="Send (0)"
+            android:layout_gravity="right"
+            android:textSize="@dimen/ts_12"
+            android:layout_marginRight="@dimen/dp_30"
+            android:textColor="@android:color/holo_blue_light"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider_color"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:hint="Search"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:singleLine="true"
+                android:background="@drawable/cardviewbackground_white"
+                />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:padding="@dimen/dp_5"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="@dimen/dp_15"
+                android:src="@drawable/asset_5"
+                android:tint="@color/gray"/>
+        </FrameLayout>
+
+
+
+        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:visibility="gone"
+            android:textSize="@dimen/ts_18"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/dark_gray"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView
+        android:id="@+id/fast_scroller_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
+</layout>

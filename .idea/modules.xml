@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ColorPicker/ColorPicker.iml" filepath="$PROJECT_DIR$/ColorPicker/ColorPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alphabetsindexfastscrollrecycler/alphabetsindexfastscrollrecycler.iml" filepath="$PROJECT_DIR$/alphabetsindexfastscrollrecycler/alphabetsindexfastscrollrecycler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/countrypicker/countrypicker.iml" filepath="$PROJECT_DIR$/countrypicker/countrypicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/croppe/croppe.iml" filepath="$PROJECT_DIR$/croppe/croppe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchlibrary/switchlibrary.iml" filepath="$PROJECT_DIR$/switchlibrary/switchlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/us_swis_android.iml" filepath="$PROJECT_DIR$/us_swis_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/us_swis_android-app.iml" filepath="$PROJECT_DIR$/app/us_swis_android-app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+// https://docs.gradle.org/current/userguide/publishing_maven.html
+// http://www.flexlabs.org/2013/06/using-local-aar-android-library-packages-in-gradle-builds
+apply plugin: 'maven-publish'
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.1"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+// This configuration is used to publish the library to a local repo while a being forked and modified.
+// It should really be set up so that the version are all in line, and set to be a SNAPSHOT.
+// The version listed here is a temp hack to allow me to keep working.
+android.libraryVariants
+
+dependencies {
+    api "androidx.appcompat:appcompat:1.0.0-beta01"
+    implementation "androidx.exifinterface:exifinterface:1.0.0-beta01"
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+}
+

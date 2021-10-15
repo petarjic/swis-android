@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="userInfo"
+            type="com.swis.android.model.responsemodel.UserInfo" />
+    </data>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fl_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/white"
+        tools:context=".fragment.EditProfileFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:id="@+id/et_name"
+                        android:text="@{userInfo.name}"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/username"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/ts_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_username"
+                        android:text="@{userInfo.username}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/email"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="textEmailAddress"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_email"
+                        android:text="@{userInfo.email}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_phone"
+                        android:text="@{userInfo.phone}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/bio"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:inputType="textMultiLine"
+                        android:maxLength="160"
+                        android:gravity="start"
+                        android:maxLines="5"
+                        android:minLines="5"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_bio"
+                        android:text="@{userInfo.bio}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/birthday"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:id="@+id/et_birthdat"
+                        android:text="@{userInfo.dob}"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/residence"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:orientation="vertical">
+
+                        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:inputType="text"
+                            android:id="@+id/et_country"
+                            android:text="@{userInfo.country}"
+                            android:textCursorDrawable="@null"
+                            android:hint="Country"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/ts_15" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:orientation="vertical">
+
+                        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:inputType="text"
+                            android:id="@+id/et_city"
+                            android:text="@{userInfo.city}"
+                            android:hint="City"
+                            android:textCursorDrawable="@null"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/ts_15" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_1"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_weight="1.4"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:inputType="text"
+                       android:ellipsize="end"
+                        android:textCursorDrawable="@null"
+                        android:id="@+id/et_address"
+                        android:text="@{userInfo.address}"                           android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/ts_15" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/colorPrimary" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:padding="@dimen/dp_5"
+                    android:textSize="@dimen/dp_15"
+                    android:text="Change Text Color"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.divyanshu.colorseekbar.ColorSeekBar
+                    android:id="@+id/color_seek_bar"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:colorSeeds="@array/rainbow"
+                    app:barHeight="@dimen/dp_5"
+                    app:thumbBorder="@dimen/dp_2"
+                    app:thumbBorderColor="@android:color/black"
+                    android:layout_weight="1.4"/>
+
+                <LinearLayout
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:orientation="horizontal">
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                       android:padding="@dimen/dp_5"
+                        android:text="More"
+                        android:textColor="@color/blue"/>
+                    <View
+                        android:id="@+id/img_bar"
+                        android:layout_width="@dimen/dp_30"
+                        android:layout_height="@dimen/dp_30"
+                        android:background="@drawable/circle_shape"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center">
+                <com.swis.android.custom.customviews.buttons.GothamRoundedMed
+                    android:id="@+id/btn_update"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/ts_15"
+                    android:background="@drawable/cardviewbackground_primary_filled"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

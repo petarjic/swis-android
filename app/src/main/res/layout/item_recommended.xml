@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img_Del"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:padding="@dimen/dp_12"
+            android:layout_gravity="right"
+            android:src="@drawable/asset_5"
+            android:tint="@color/dark_gray" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/profile_Pic"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/intro1" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_4"
+            android:text="Ashutosh Pandey"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/ts_16" />
+
+        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+            android:id="@+id/tv_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_5"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:minHeight="@dimen/dp_50"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/ts_14" />
+
+
+        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+            android:id="@+id/btn_follow"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/cardviewbackgroundblue"
+            android:gravity="center"
+            android:text="Follow"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/ts_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/intro"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_104"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_102"
+                app:srcCompat="@drawable/logo_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_70"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.swis.android.custom.customviews.buttons.GothamRoundedBook
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="@dimen/dp_93"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:background="@drawable/card_view_with_selector"
+                    android:text="Sign up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+                <com.swis.android.custom.customviews.buttons.GothamRoundedBook
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="@dimen/dp_93"
+                    android:layout_height="@dimen/button_height"
+                    android:text="Sign In"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:background="@drawable/cardviewbackground_primary_filled"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:layout_marginStart="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:orientation="horizontal">
+
+            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                android:id="@+id/tv_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_condition"
+                android:layout_marginRight="@dimen/dp_20"
+                android:textSize="@dimen/ts_14"
+                android:textColor="@color/white" />
+
+            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                android:id="@+id/tv_privacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/privacy_policy"
+                android:textSize="@dimen/ts_14"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>

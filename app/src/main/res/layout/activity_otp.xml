@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/asset_15"
+    tools:context=".fragment.OtpFragment">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/back_icon" />
+
+    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:textColor="@color/colorAccent"
+        android:layout_marginRight="@dimen/dp_40"
+        android:padding="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="Enter confirmation code"
+        android:textSize="@dimen/ts_18" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+            android:id="@+id/code1"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/cardviewbackgroundotp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:padding="@dimen/dp_10"
+            android:layout_margin="@dimen/dp_10"
+            android:textSize="@dimen/ts_22" />
+        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+            android:id="@+id/code2"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_50"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/cardviewbackgroundotp"
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="@dimen/ts_22" />
+        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+            android:id="@+id/code3"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/cardviewbackgroundotp"
+            android:padding="@dimen/dp_10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textSize="@dimen/ts_22" />
+        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+            android:id="@+id/code4"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_50"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/cardviewbackgroundotp"
+            android:padding="@dimen/dp_10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/ts_22" />
+
+    </LinearLayout>
+    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_40"
+        android:textColor="@color/colorAccent"
+        android:text="Check your text message !"
+        android:textSize="@dimen/ts_18" />
+    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+        android:id="@+id/tv_msg_foo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginRight="@dimen/dp_35"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/dp_5"
+        android:text="If you didn't receive your code. please go back and check to see if your number is correct "
+        android:textSize="@dimen/ts_14" />
+</LinearLayout>
+</layout>

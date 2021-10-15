@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+
+            android:orientation="vertical"
+            tools:context=".activity.SignUpActivity">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/back_icon" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingTop="@dimen/dp_50"
+                android:paddingRight="@dimen/dp_30"
+                android:paddingBottom="@dimen/dp_30">
+
+
+                <ImageView
+                    android:id="@+id/image_logo_new_account"
+                    android:layout_width="@dimen/dp_244"
+                    android:layout_height="@dimen/dp_47"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp_40"
+                    app:srcCompat="@drawable/asset_19" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_60"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/emaildrawablesize"
+                        android:drawablePadding="@dimen/dp_20"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/ts_16" />
+
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/email_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_50"
+                        android:layout_marginTop="@dimen/dp_m_15"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:textColor="@color/red"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/ts_14"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_m_10"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_60"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableLeft="@drawable/passdrawablesize"
+                        android:drawablePadding="@dimen/dp_20"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/ts_16" />
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/pass_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_50"
+                        android:layout_marginTop="@dimen/dp_m_15"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:textColor="@color/red"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/ts_14"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginTop="@dimen/dp_m_10"
+                    android:background="@color/white" />
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                    android:id="@+id/tv_forget_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="right"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_14" />
+
+                <com.swis.android.custom.customviews.buttons.GothamRoundedBook
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="@dimen/dp_93"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:background="@drawable/card_view_with_selector"
+                    android:text="Sign in"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_16" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</layout>

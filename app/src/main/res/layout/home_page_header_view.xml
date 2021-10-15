@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5">
+
+        <ImageView
+            android:id="@+id/img_reverse"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/left_2"
+            android:visibility="visible"/>
+
+        <com.swis.android.custom.customviews.SparkRecyclerViewLatest
+            android:id="@+id/spark_followings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_forward"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/right"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/profile_Pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_95"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/intro1" />
+                    <ImageView
+                        android:id="@+id/img_type"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:src="@drawable/play_icon" />
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/tv_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:background="@drawable/rectangle_filled"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_3"
+                        android:text="13:30"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts_12" />
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_160"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:maxLines="3"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:textColor="@color/black99"
+                        android:textSize="@dimen/ts_14" />
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:singleLine="true"
+                        android:textColor="@color/newgrey"
+                        android:textSize="@dimen/ts_12" />
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/tv_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginTop="-2dp"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_8"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:singleLine="true"
+                        android:textColor="@color/url_color"
+                        android:textSize="@dimen/ts_12" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.nitscoder:spark:0.0.1_beta2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1be554c6007d6ea961bb830a3e23252/jetified-spark-0.0.1_beta2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1be554c6007d6ea961bb830a3e23252/jetified-spark-0.0.1_beta2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c1be554c6007d6ea961bb830a3e23252/jetified-spark-0.0.1_beta2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nitscoder/spark/0.0.1_beta2/788d6994c5c7a8f5acd90b2be33d0a69308c1364/spark-0.0.1_beta2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nitscoder/spark/0.0.1_beta2/d44aedcbc9b22259435580e5ceaae91dd7b70b93/spark-0.0.1_beta2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

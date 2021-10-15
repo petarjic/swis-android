@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#233b47</color>
+    <color name="colorPrimaryDark">#233b47</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="gray">#C9C9CE</color>
+    <color name="divider_color">#99e4e4e4</color>
+    <color name="dark_gray">#868686</color>
+    <color name="black">#000</color>
+    <color name="black99">#99000000</color>
+    <color name="blue">#2D98E9</color>
+    <color name="brown">#017AFF</color>
+    <color name="action_bar_color">#FAFAFA</color>
+    <color name="status_bar_color">#D4E4EC</color>
+    <color name="bright_pink">#FF007F</color>
+    <color name="red">#EC2323</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+
+    <color name="green">#00FF00</color>
+    <color name="url_color">#549D53</color>
+    <color name="description_color">#323CFF</color>
+    <color name="spring_green">#00FF7F</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="azure">#007FFF</color>
+
+    <color name="violet">#7F00FF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="newgrey">#868686</color>
+
+    <array name="rainbow">
+        <item>@color/bright_pink</item>
+        <item>@color/red</item>
+        <item>@color/orange</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+        <item>@color/spring_green</item>
+        <item>@color/cyan</item>
+        <item>@color/azure</item>
+        <item>@color/blue</item>
+        <item>@color/violet</item>
+        <item>@color/magenta</item>
+    </array>
+</resources>

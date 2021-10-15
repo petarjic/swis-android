@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_11"
+                android:layout_marginEnd="@dimen/dp_11"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/ll_bus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                            android:id="@+id/tv_count1"
+                            android:layout_width="@dimen/dp_22"
+                            android:layout_height="@dimen/dp_22"
+                            android:background="@drawable/circle_shape_blue"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_14" />
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                            android:id="@+id/tv_name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingRight="@dimen/dp_10"
+                            android:singleLine="true"
+                            android:text="Kim Hair Salon"
+                            android:textColor="@color/description_color"
+                            android:textSize="@dimen/ts_16" />
+                    </LinearLayout>
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/tv_details1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_30"
+                        android:text="DownTown, seattle"
+                        android:textColor="@color/newgrey"
+                        android:textSize="@dimen/ts_14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_30"
+                        android:paddingTop="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_30"
+                        android:paddingBottom="@dimen/dp_5">
+
+                        <LinearLayout
+                            android:id="@+id/ll_call1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/dp_10">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_18"
+                                android:layout_height="@dimen/dp_18"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_call"
+                                android:tint="@color/colorPrimary" />
+
+                            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                                android:id="@+id/tv_call1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:paddingRight="@dimen/dp_5"
+                                android:text="Call"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/ts_14" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_direction1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/dp_10">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_direction"
+                                android:tint="@color/colorPrimary" />
+
+                            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:paddingRight="@dimen/dp_5"
+                                android:text="Direction"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/ts_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_website1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="@dimen/dp_10">
+
+                            <ImageView
+                                android:layout_width="@dimen/dp_20"
+                                android:layout_height="@dimen/dp_20"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_website"
+                                android:tint="@color/colorPrimary" />
+
+                            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/dp_5"
+                                android:paddingRight="@dimen/dp_5"
+                                android:text="Website"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/ts_14" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/bus_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/divider_color" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

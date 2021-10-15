@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.swis.android.activity.PreviewActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48" />
+
+        <com.swis.android.custom.customviews.SparkRecyclerViewLatest
+            android:id="@+id/sparkView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingRight="@dimen/dp_5"
+            android:layout_weight="1"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:background="@color/action_bar_color"
+            android:elevation="@dimen/dp_5">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="@dimen/dp_55"
+                android:layout_height="@dimen/dp_55"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_search" />
+
+            <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                android:id="@+id/tv_preview_count"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="end|center"
+                android:layout_marginTop="@dimen/dp_3"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_5"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/ts_14" />
+
+            <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                android:id="@+id/tv_clear_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:text="Clear All"
+                android:textAllCaps="true"
+                android:layout_gravity="start|center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/ts_16" />
+            <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_5"
+                android:text="Done"
+                android:textAllCaps="true"
+                android:layout_gravity="end|center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/ts_16" />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

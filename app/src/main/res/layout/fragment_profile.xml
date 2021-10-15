@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/asset_15"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:visibility="invisible"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/back_icon" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_20">
+
+                <LinearLayout
+                    android:id="@+id/ll_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                        android:id="@+id/tv_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_40"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:text="Add your profile picture"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/ts_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_50"
+                        android:layout_marginRight="@dimen/dp_50"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dp_20">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_15"
+                            app:cardCornerRadius="@dimen/dp_5">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/iv_profile"
+                                    android:layout_width="@dimen/dp_150"
+                                    android:layout_height="@dimen/dp_150"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY" />
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_upload"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Upload image"
+                                    android:textColor="@color/black" />
+                            </FrameLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:text="Ashutosh Pandey"
+                            android:textColor="@color/white"
+
+                            android:textSize="@dimen/ts_20" />
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                            android:id="@+id/tv_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="A@sdfjklsjdkjkldjskl"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_30"
+                            android:orientation="vertical">
+
+                            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                                android:id="@+id/tv_message"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorAccent"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:text=""/>
+
+                            <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedItalic
+                                android:id="@+id/et_bio"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/white"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/white"
+                                android:hint="Write a bio about yourself!"
+                                android:minLines="3"
+                                android:maxLength="160"
+                                android:textSize="@dimen/ts_14" />
+                        </LinearLayout>
+
+
+                        <com.swis.android.custom.customviews.buttons.GothamRoundedBook
+                            android:id="@+id/btn_continue"
+                            android:layout_width="@dimen/dp_150"
+                            android:layout_height="@dimen/dp_35"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp_20"
+                            android:background="@drawable/card_view_with_selector_white"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/ts_18" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

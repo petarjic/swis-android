@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_7"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginEnd="@dimen/dp_7"
+                android:layout_marginBottom="-5dp"
+                app:cardCornerRadius="@dimen/dp_5"
+                app:cardBackgroundColor="@color/white"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                            android:id="@+id/tv_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_15"
+                            android:paddingTop="@dimen/dp_5"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/description_color"
+                            android:textSize="@dimen/ts_14" />
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                            android:id="@+id/tv_url"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_15"
+                            android:ellipsize="end"
+                            android:paddingBottom="@dimen/dp_5"
+                            android:singleLine="true"
+                            android:textColor="@color/url_color"
+                            android:textSize="@dimen/ts_13" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/ll_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="285dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/intro" />
+
+                        <ImageView
+                            android:id="@+id/img_type"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@drawable/play_icon"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                    <LinearLayout
+                        android:id="@+id/cv_desc"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                            android:id="@+id/tv_new_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_300"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/dp_15"
+                            android:paddingRight="@dimen/dp_15"
+                            android:background="@color/divider_color"
+                            android:lineSpacingExtra="@dimen/dp_5"
+                            android:textSize="@dimen/ts_18"
+                            android:maxLines="12"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </LinearLayout>
+</layout>

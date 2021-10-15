@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        android:id="@+id/activity_main"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.truiton.bottomnavigation.MainActivity">
+
+
+        <include layout="@layout/app_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:id="@+id/app_bar"/>
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_above="@+id/navigation"
+                android:layout_below="@id/app_bar"
+                android:animateLayoutChanges="true">
+
+            </FrameLayout>
+
+        <me.ibrahimsn.lib.NiceBottomBar
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            app:backgroundColor="@color/action_bar_color"
+            app:indicatorColor="@color/blue"
+            app:textColor="@color/newgrey"
+            app:textColorActive="@color/blue"
+            app:indicatorEnabled="true"
+            app:iconSize="@dimen/dp_28"
+            app:indicatorGravity="bottom"
+            app:menu="@menu/navigation"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.SearchActivity">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48" />
+
+        <FrameLayout
+            android:id="@+id/ll_search_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:paddingTop="@dimen/dp_2"
+                        android:layout_height="wrap_content">
+
+                        <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                            android:id="@+id/searchView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_3"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:background="@drawable/cardviewbackground_primary"
+                            android:hint="Search"
+                            android:imeOptions="actionSearch"
+                            android:paddingStart="@dimen/dp_15"
+                            android:paddingTop="@dimen/dp_6"
+                            android:paddingEnd="@dimen/dp_10"
+                            android:paddingBottom="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColorHint="#cccccc"
+                            android:textCursorDrawable="@drawable/cursor_color" />
+
+                        <ImageView
+                            android:id="@+id/img_delete"
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/asset_5"
+                            android:tint="@color/gray"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dp_2"
+                        android:paddingBottom="@dimen/dp_2"
+                        android:layout_marginStart="@dimen/dp_15"
+                        android:layout_marginBottom="-1dp"
+                        android:orientation="vertical">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/dp_2"
+                                android:paddingBottom="@dimen/dp_2"
+                                android:orientation="horizontal">
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_all"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"
+                                    android:text="@string/all"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_news"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"                                    android:text="@string/news"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_videos"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"                                    android:text="@string/videos"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_images"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"                                    android:text="@string/images"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_maps"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"                                    android:text="@string/maps"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_youtube"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"                                    android:text="@string/youtube"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+
+                                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                                    android:id="@+id/tv_amazon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/dp_5"
+                                    android:paddingRight="@dimen/dp_10"                                    android:text="@string/amazon"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/newgrey"
+                                    android:textSize="@dimen/ts_13" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <com.swis.android.custom.customviews.SparkRecyclerViewLatest
+                        android:id="@+id/sparkView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:background="@color/action_bar_color"
+                    android:elevation="@dimen/dp_5">
+
+                    <ImageView
+                        android:id="@+id/img_search"
+                        android:layout_width="@dimen/dp_55"
+                        android:layout_height="@dimen/dp_55"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:src="@drawable/ic_search" />
+
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                        android:id="@+id/tv_preview_count"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/ts_14" />
+
+                    <ImageView
+                        android:id="@+id/img_recent"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="end|center"
+                        android:scaleType="fitXY"
+                        android:padding="@dimen/dp_10"
+                        android:src="@drawable/multi_item"
+                        android:tint="@color/colorPrimary" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

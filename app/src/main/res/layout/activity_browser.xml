@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_nisin_browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.nitesh.nisineduluv.NisinBrowserActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:elevation="@dimen/dp_2"
+            android:background="@color/action_bar_color"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@drawable/back_icon"
+                    android:tint="@color/colorPrimary"/>
+
+                <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                    android:id="@+id/tv_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="bottom|center"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/ts_14" />
+
+                <ProgressBar
+                    android:id="@+id/progessBar"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:indeterminateTint="@color/colorPrimary" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:elevation="@dimen/dp_5"
+            android:orientation="horizontal"
+            android:background="@color/action_bar_color"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/go_back"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:tint="@color/dark_gray"
+                    android:src="@drawable/left_2" />
+
+                <ImageView
+                    android:id="@+id/go_forw"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:tint="@color/dark_gray"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:src="@drawable/right" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="@dimen/dp_55"
+                android:layout_height="@dimen/dp_55"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/ic_search" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_30"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/shareicon"
+                android:tint="@color/colorPrimary"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                        android:id="@+id/tv_preview_count"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="@dimen/dp_3"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/ts_14" />
+
+                    <ImageView
+                        android:id="@+id/img_recent"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="end|center"
+                        android:scaleType="fitXY"
+                        android:padding="@dimen/dp_10"
+                        android:src="@drawable/multi_item"
+                        android:tint="@color/colorPrimary" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

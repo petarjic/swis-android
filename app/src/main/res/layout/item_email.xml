@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:background="#efefef"
+        android:text="A"
+        android:visibility="gone"
+        android:textSize="@dimen/ts_20"
+        android:paddingLeft="@dimen/dp_20"
+        android:gravity="start|center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_2"
+        android:gravity="center_vertical">
+        <com.swis.android.custom.customviews.CircularTextView
+            android:id="@+id/ctv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/ts_16"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.swis.android.custom.customviews.textViews.GothamRoundedMed
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="Name"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="16sp" />
+
+            <com.swis.android.custom.customviews.textViews.GothamRoundedBook
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingBottom="@dimen/dp_5"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox"
+            android:padding="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+             />
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+        android:layout_marginTop="@dimen/dp_2"/>
+
+</LinearLayout>

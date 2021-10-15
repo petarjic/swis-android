@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical"
+        tools:context=".fragment.FollowRequestFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <com.swis.android.custom.customviews.edittext.EditTextGothamRoundedBook
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/cardviewbackground_gray"
+                    android:drawableLeft="@drawable/search"
+                    android:imeOptions="actionSearch"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:hint="Search Request"
+                    android:padding="@dimen/dp_8"
+                    android:singleLine="true"
+                    android:textColorHint="#cccccc" />
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:padding="@dimen/dp_5"
+                    android:visibility="gone"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:src="@drawable/asset_5"
+                    android:tint="@color/dark_gray"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <com.swis.android.custom.customviews.CustomSwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.swis.android.custom.customviews.SparkRecyclerViewLatest
+                android:id="@+id/sparkView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.swis.android.custom.customviews.SparkRecyclerViewLatest>
+
+        </com.swis.android.custom.customviews.CustomSwipeRefreshLayout>
+
+
+    </LinearLayout>
+</layout>
